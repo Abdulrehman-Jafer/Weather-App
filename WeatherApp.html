@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="./WeatherApp.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="titleofApp">Weather</h1>
+      <div class="inputContainer">
+        <input type="text" id="citynameInput" value="" required placeholder="Write the city name here"/>
+        <div class="searchBtn">
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+      <h2 style="color: white" id="status"></h2>
+      <section class="tempContainer hidden">
+        <div class="avgTempContainer">
+          <span style="color: orange">Avg-Temp:</span>
+          <span id="avgTemp"></span>
+          <span>°F</span>
+        </div>
+        <div class="minTempContainer">
+          <span style="color: orange">Min-Temp:</span>
+          <span id="minTemp"></span>
+          <span>°F</span>
+        </div>
+        <div class="maxTempContainer">
+          <span style="color: orange">Max-Temp:</span>
+          <span id="maxTemp"></span>
+          <span>°F</span>
+        </div>
+      </section>
+    </main>
+    <script src="./WeatherApp.js"></script>
+  </body>
+</html>
